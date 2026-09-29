@@ -5,3 +5,4 @@ Release/
 *.user
 *.suo
 .vs/
+*.pubxml

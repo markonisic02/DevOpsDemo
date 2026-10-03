@@ -6,3 +6,4 @@ Release/
 *.suo
 .vs/
 *.pubxml
+.env

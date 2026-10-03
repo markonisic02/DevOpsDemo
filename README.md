@@ -222,15 +222,19 @@ Both probes currently use:
 
 ## CI Pipeline
 
-The repository includes an Azure DevOps pipeline that performs:
+The Azure DevOps pipeline runs on Ubuntu and performs:
 
-1. .NET SDK setup
-2. Dependency restore
-3. Application build
-4. Application publish
-5. Build artifact publication
+1. Repository checkout
+2. .NET 8 SDK setup
+3. Dependency restore
+4. Application build
+5. Application publish
+6. Docker image build
+7. Docker image validation
+8. Docker Compose configuration validation
+9. Build artifact publication
 
-The pipeline will be extended further as the project evolves.
+The pipeline automatically validates both the application build and container configuration.
 
 ## API
 
